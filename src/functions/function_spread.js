@@ -1,15 +1,7 @@
-function test(a, b, c) {
-    console.log(a);
-    console.log(b);
-    console.log(c);
-
-    let result = a + b
-
-    if (c) {
-        result += c
-    }
-
-    return result
+function test() {
+	return Array
+		.from(arguments)
+		.reduce((acc, val) => acc + val, 0)
 }
 
 
