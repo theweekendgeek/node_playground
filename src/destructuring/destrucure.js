@@ -19,3 +19,14 @@ try {
 } catch (e) {
 	console.log(e);
 }
+
+// outside of function signature
+const a = undefined
+
+// does not work
+// const { b } = a ;
+
+// works
+const { b } = a || {}
+
+console.log(b);
